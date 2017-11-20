@@ -1,0 +1,146 @@
+O HTTP é um protocolo de requisição-resposta no modelo computacional cliente-servidor.
+
+//O cabeçalho da mensagem (header) é utilizado para transmitir informações adicionais entre o cliente e o servidor. pode ter tamanho total de 72bytes
+
+Métodos HTTP ou verbos.
+Quando você vai fazer uma requisição, é preciso que você especifique qual o método será utilizado. Os métodos HTTP, também conhecidos como verbos, identificam qual a ação que deve ser executada em um determinado recurso. Existem 8 métodos HTTP, mas apenas 5 são mais utilizados.
+
+GET: O método GET requisita uma representação do recurso especificado. solicita/retorna
+
+HEAD: É o mesmo que GET, mas sem que o recurso seja retornado. É usado para obter meta-informações por meio do cabeçalho da resposta, sem ter que recuperar todo o conteúdo.
+
+POST: Envia dados para serem processados.
+
+DELETE: Exclui o recurso.
+
+PUT: Edita as informações de um determinado recurso.
+
+Trace: Ecoa o pedido, de maneira que o cliente possa saber o que os servidores intermediários estão mudando em seu pedido
+
+Options: Recupera os métodos HTTP que o servidor aceita.
+
+Connect: Serve para uso com um proxy que possa se tornar um túnel SSL (um túnel pode ser usado, por exemplo, para criar uma conexão segura).
+
+Um pedido HTTP tem a seguinte sintaxe:
+
+VERSÃO DO METODO DO URL <crlf>  
+Cabeçalho: Valor <crlf>  
+CABEÇALHO: Valor <crlf>  
+Linha vazia<crlf>  
+CORPO DO PEDIDO
+________________________________________________________________________________________________________________________________________________
+
+Um exemplo de pedido HTTP
+
+POST /index.html HTTP/1.0
+ Accept: text/html
+ If-modified-since: Sat, 29 Oct 1999 19:43:31 GMT
+ Content-Type: application/x-www-form-urlencoded
+ Content-Length: 41
+Linha vazia
+ Nome=NomePessoa&Idade=99&Curso=Computacao
+
+O servidor responde com uma linha de status (status line) 
+
+Codigo.
+10x Mensagem de informação ultilizada somente no HTTP2.
+
+20x Mensagem de sucesso.(200 OK)"O pedido foi realizado corretamente"
+
+30x Mensagem de Redirecionamento.(MOVED)"Os dados pedidos foram transferidos para um novo endereço"
+
+40x Mensagem de erro devido cliente.(402 PAYMENT REQUIRED)"O cliente deve reformular o seu pedido com os dados de pagamento corretos"
+
+50x Mensagem de erro devido ao servidor.(504 GATEWAY TIMEOUT)"A resposta do servidor demorou muito em relação ao que a gateway foi preparada para recebê-la (o tempo que lhe estava destinado esgotou-se)"
+
+
+Uma resposta HTTP tem a seguinte sintaxe
+
+EXPLICAÇÃO DO CÓDIGO DA VERSÃO-HTTP<crlf>  
+Cabeçalho: Valor <crlf>   
+CABEÇALHO: Valor<crlf>  
+Linha vazia<crlf>  
+CORPO DA RESPOSTA
+________________________________________________________________________________________________________________________________________________
+
+Exemplo de resposta HTTP:
+
+HTTP/1.0 200 OK  
+Date: Sat, 15 Jan 2000 14:37:12 GMT  
+Server: Microsoft-IIS/2.0  
+Content-Type: text/HTML  
+Content-Length : 1245  
+Last-Modified: Fri, 14 Jan 2000 08:25:13 GMT
+Linha vazia
+CORPO DA RESPOSTA
+
+_________________________________________________________________________________________________________________________________________________
+					 HTTPS
+
+É sintaticamente idêntico ao esquema HTTP utilizado para conexões normais HTTP, mas sinaliza o navegador para utilizar uma camada adicional de criptografia utilizando SSL/TLS para proteger o tráfego.
+
+As páginas HTTPS normalmente usam um dos dois protocolos seguros para criptografar comunicações - SSL (Secure Sockets Layer) ou TLS (Transport Layer Security). Ambos protocolos usam o que é conhecido como um sistema de infra-estrutura de chave public(PKI)"assimétrico. Um sistema assimétrico usa dois chaves para criptografar comunicações, uma chave publica e outra privada, qualquer coisa criptografada com a chave pública so pode ser descriptografada pela chave privada e vice-versa.	
+
+hTTPS utiliza a porta 443 como padrão, enquanto HTTP  utiliza a porta 80 como padrão.
+
+________________________________________________________________________________________________________________________________________________
+
+					Web Services
+
+Resumindo, Web Services é a tecnologia ideal para comunicação entre sistemas. A comunicação entre os serviços é padronizada, possibilitando a independência de plataforma e de linguagem de programação. Por exemplo, um sistema de desenvolvido em Java e rodando em um servidor Linux pode acessar, com transparência, um serviço feito em .Net rodando em um servidor Microsoft.
+
+Comunicação entre aplicações.
+Interações entre diferentes plataformas.
+Aplicações como serviços.
+Acessibilidade e disponibilidade de informações.
+Aplicações independentes.
+Interoperabilidade.(é a capacidade de um sistema de se comunicar de forma transparente (ou o mais próximo disso) com outro sistema (semelhante ou não))
+________________________________________________________________________________________________________________________________________________
+
+REST:  Representational State Transfer, presica apenas do protocolo http para criar o webservice. Sua concepção, portanto, não é de um protocolo, mas sim de um Design Pattern arquitetural para serviços expostos numa rede, como a internet, através do protocolo HTTP. 
+principais vantagens a facilidade no desenvolvimento, o aproveitamento da infraestrutura web existente e um esforço de aprendizado pequeno. Tem o potencial de ser bem mais simples que uma implementação com WSDL/SOAP. É baseado em JSON por isso tem facilidade em fazer Marshalling.
+
+________________________________________________________________________________________________________________________________________________
+
+SOAP: protocolo simples de acesso a objetos. 
+cada serviço terá um arquivo .wsdl que terá a definição de suas operações, estrutura de dados que são usadas nas requisições e respostas, Endpoints (endereços de rede do serviço).
+
+Desvantagem: O tamanho da mensagem ocasiona um overhead considerável, tanto por ser estruturado em XML e também por adicionar muitas tags de meta-informação. O processo de transmissão da mensagem envolve a serialização e desserialização que pode consumir um tempo considerável e exigir mais capacidade de processamento.
+
+________________________________________________________________________________________________________________________________________________
+
+
+Exemplo SOAP- Criação e consuimo. soapUi
+
+Exemplo em rest- Criação e consumo. postman 
+
+filial: nome, endereço e codigo filter codigo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+Exemplo SOAP- Criação e consuimo. soapUi
+
+Exemplo em rest- Criação e consumo. postman 
+
+filial: nome, endereço e codigo filter codigo.
+
+XSD: XSD (XML Schema Definition), uma recomendação do World Wide Web Consortium (W3C), especifica como descrever formalmente os elementos em um documento XML (Extensible Markup Language). Ele pode ser usado pelos programadores para verificar cada item de item em um documento. Eles podem verificar se ele adere à descrição do elemento em que é colocado.
+
+Marshalling: Em ciência da computação, marshalling (sem sinônimo em português, às vezes escrito marshaling com um l apenas) é o processo de transformação da representação de memória de um objeto em um formato de dados compatível para armazenamento ou transmissão, e é usado tipicamente quando dados precisam ser movimentados entre diferentes partes de um aplicativo de computador ou de um aplicativo para outro.

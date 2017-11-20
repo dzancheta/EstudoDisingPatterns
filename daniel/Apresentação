@@ -1,0 +1,23 @@
+Cache-Control: fica armazenado informações sobre o cache tipo:tamanho, publico para todos os cache entre outras coisas
+
+Content-Length: Descreve o tamanha total da pagina em decimal de octetos.
+
+Content-Type: qual o tipo de dados está sendo transportados.
+
+Date: Contem a data e a hora que a ultima mensagem foi originada.
+
+Etag: toda vez que o servidor envia algo para o cliente ele manda manda esse codigo, e se o cliente solicitar algo para o servidor novamente, ele verifica se foi alterado a etag, se não foi alterado ele direciona para o cache para economia de bandas.
+
+Server: ele contem informações sobre o software usado pelo servidor de origem paa lidar com o pedido.
+
+Via: fica armazenado informações sobre o proxy
+
+X-Powered-By: especifica qual a tecnologia suportada pelo servidor web.
+
+WebService: Resumindo, Web Services é a tecnologia ideal para comunicação entre sistemas. A comunicação entre os serviços é padronizada, possibilitando a independência de plataforma e de linguagem de programação
+
+SOAP: Cada serviço terá um arquivo .wsdl que terá a definição de suas operações, estrutura de dados que são usadas nas requisições e respostas, Endpoints (endereços de rede do serviço).
+
+REST: Presica apenas do protocolo http para criar o webservice. Sua concepção, portanto, não é de um protocolo, mas sim de um Design Pattern arquitetural para serviços expostos numa rede, como a internet, através do protocolo HTTP. 
+
+INVERSÃO DE CONTROLE E INJEÇÃO DE DEPENDENCIAS: 

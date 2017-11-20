@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ConsumirServicos.iml" filepath="$PROJECT_DIR$/.idea/modules/ConsumirServicos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ConsumirServicos_main.iml" filepath="$PROJECT_DIR$/.idea/modules/ConsumirServicos_main.iml" group="ConsumirServicos" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ConsumirServicos_test.iml" filepath="$PROJECT_DIR$/.idea/modules/ConsumirServicos_test.iml" group="ConsumirServicos" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/testHotel.iml" filepath="$PROJECT_DIR$/.idea/modules/testHotel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/testHotel_main.iml" filepath="$PROJECT_DIR$/.idea/modules/testHotel_main.iml" group="testHotel" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/testHotel_test.iml" filepath="$PROJECT_DIR$/.idea/modules/testHotel_test.iml" group="testHotel" />
+    </modules>
+  </component>
+</project>
